@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Nails by Sharon Spa and More — beauty nails, spa treatments and self-care services.">
+  <meta name="description" content="Nails by Sharon Spa and More — beautiful nails, relaxing spa treatments and professional beauty care.">
 
-  <title>Nails by Sharon Spa and More</title>
+  <title>Nails by Sharon Spa & More</title>
 
   <style>
     * {
@@ -21,72 +21,62 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #fffafc;
-      color: #4b2635;
       line-height: 1.6;
+      color: #3d3036;
+      background: #fffafb;
     }
 
-    h1,
-    h2,
-    h3 {
-      font-family: Georgia, serif;
+    a {
+      text-decoration: none;
     }
 
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255, 250, 252, 0.97);
-      border-bottom: 1px solid #f0dce4;
+      background: rgba(255, 250, 251, 0.97);
+      backdrop-filter: blur(10px);
       padding: 18px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      box-shadow: 0 2px 15px rgba(80, 40, 60, 0.08);
     }
 
     .brand {
-      text-decoration: none;
       display: flex;
       flex-direction: column;
-      line-height: 1.1;
+      color: #8b4f68;
     }
 
     .brand-main {
-      color: #4b2635;
       font-family: Georgia, serif;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: bold;
       letter-spacing: 1px;
     }
 
     .brand-sub {
-      color: #b06a87;
-      font-size: 10px;
+      font-size: 11px;
       letter-spacing: 4px;
-      margin-top: 5px;
+      margin-top: 2px;
     }
 
     nav {
       display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      justify-content: center;
+      gap: 24px;
     }
 
     nav a {
-      color: #5d3a48;
-      text-decoration: none;
+      color: #4d3942;
       font-size: 14px;
-      font-weight: bold;
-      transition: 0.3s ease;
+      font-weight: 600;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      color: #b06a87;
+      color: #b76e8c;
     }
-
-    /* HERO */
 
     .hero {
       min-height: 88vh;
@@ -94,11 +84,11 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 80px 7%;
+      padding: 70px 20px;
       background:
-        linear-gradient(rgba(58, 24, 39, 0.43), rgba(58, 24, 39, 0.43)),
+        linear-gradient(rgba(55, 25, 40, 0.42), rgba(55, 25, 40, 0.42)),
         url("https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1600&q=85")
-        center/cover no-repeat;
+        center/cover;
       color: white;
     }
 
@@ -107,156 +97,128 @@
     }
 
     .hero-brand {
-      display: flex;
-      flex-direction: column;
       margin-bottom: 25px;
     }
 
     .hero-brand strong {
+      display: block;
       font-family: Georgia, serif;
-      font-size: 46px;
+      font-size: clamp(30px, 6vw, 62px);
       letter-spacing: 3px;
     }
 
     .hero-brand span {
-      font-size: 13px;
+      display: block;
+      font-size: 14px;
       letter-spacing: 7px;
-      margin-top: 8px;
+      margin-top: 6px;
     }
 
     .small-title {
-      font-size: 13px;
-      letter-spacing: 4px;
+      font-size: 14px;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
     }
 
     .hero h1 {
-      font-size: 55px;
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 6vw, 68px);
       margin-bottom: 20px;
+      line-height: 1.1;
     }
 
     .hero p {
       max-width: 650px;
       margin: auto;
       font-size: 17px;
-      line-height: 1.8;
     }
 
     .btn {
       display: inline-block;
-      text-decoration: none;
-      padding: 14px 27px;
+      padding: 14px 26px;
       border-radius: 30px;
       margin: 25px 6px 0;
       font-weight: bold;
-      transition: 0.3s ease;
+      transition: 0.3s;
     }
 
     .btn-primary {
-      background: #b06a87;
+      background: #c87999;
       color: white;
-    }
-
-    .btn-primary:hover {
-      background: #8f4f6b;
-      transform: translateY(-2px);
     }
 
     .btn-light {
       background: white;
-      color: #6b3b4f;
+      color: #7f4960;
     }
 
-    .btn-light:hover {
-      background: #fbe8ef;
-      transform: translateY(-2px);
+    .btn:hover {
+      transform: translateY(-3px);
     }
 
     section {
-      scroll-margin-top: 90px;
-    }
-
-    .section-heading {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 55px;
+      padding: 90px 7%;
     }
 
     .section-label {
-      display: inline-block;
-      font-size: 12px;
-      letter-spacing: 3px;
-      color: #b06a87;
+      display: block;
+      color: #b36a86;
+      font-size: 13px;
       font-weight: bold;
-      margin-bottom: 12px;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
     }
 
-    .section-heading h2 {
-      font-size: 42px;
-      color: #4b2635;
-      margin-bottom: 18px;
+    .section-title {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 50px;
     }
 
-    .section-heading p {
-      font-size: 16px;
-      line-height: 1.8;
-      color: #765d68;
+    .section-title h2,
+    .about h2,
+    .contact-content h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 5vw, 50px);
+      color: #573d49;
+      margin-bottom: 15px;
     }
 
-    /* ABOUT */
+    .section-title p {
+      color: #765f68;
+    }
 
     .about {
-      padding: 100px 8%;
-      background: white;
+      background: #fff;
+      text-align: center;
     }
 
-    .about-container {
-      max-width: 1050px;
+    .about-content {
+      max-width: 850px;
       margin: auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 55px;
-      align-items: center;
     }
 
-    .about-image {
-      min-height: 430px;
-      border-radius: 20px;
-      background:
-        url("https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1000&q=85")
-        center/cover no-repeat;
-    }
-
-    .about-text h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-
-    .about-text p {
-      color: #765d68;
+    .about p {
+      color: #765f68;
+      font-size: 17px;
       margin-bottom: 18px;
-      line-height: 1.9;
     }
 
-    .about-quote {
-      margin-top: 25px;
-      padding-left: 18px;
-      border-left: 3px solid #b06a87;
-      color: #8f4f6b;
+    .quote {
+      margin-top: 30px;
       font-family: Georgia, serif;
-      font-size: 18px;
+      font-size: 23px;
+      color: #a85e7b;
+      font-style: italic;
     }
 
-    /* SERVICES */
-
-    .services-section {
-      padding: 100px 8%;
-      background: #fff7fa;
+    .services {
+      background: #fff7f9;
     }
 
     .services-grid {
-      max-width: 1150px;
+      max-width: 1200px;
       margin: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -264,79 +226,67 @@
     }
 
     .service-card {
-      background: #ffffff;
-      padding: 35px 28px;
+      background: white;
+      padding: 32px 25px;
+      border-radius: 20px;
       text-align: center;
-      border-radius: 18px;
-      border: 1px solid #f0dce4;
-      box-shadow: 0 10px 30px rgba(80, 35, 55, 0.07);
-      transition: 0.3s ease;
+      box-shadow: 0 8px 30px rgba(90, 50, 70, 0.08);
+      transition: 0.3s;
+      border: 1px solid #f5e3e9;
     }
 
     .service-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 18px 40px rgba(80, 35, 55, 0.12);
+      box-shadow: 0 15px 35px rgba(90, 50, 70, 0.14);
     }
 
     .service-icon {
-      width: 65px;
-      height: 65px;
-      margin: 0 auto 20px;
-      border-radius: 50%;
-      background: #fbe8ef;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
+      font-size: 42px;
+      margin-bottom: 15px;
     }
 
     .service-card h3 {
-      color: #4b2635;
-      font-size: 22px;
-      margin-bottom: 14px;
+      font-family: Georgia, serif;
+      font-size: 24px;
+      color: #674452;
+      margin-bottom: 10px;
     }
 
     .service-card p {
-      color: #765d68;
-      font-size: 15px;
-      line-height: 1.7;
-      margin-bottom: 18px;
+      color: #78636c;
+      margin-bottom: 15px;
     }
 
-    .service-note {
+    .price {
       display: block;
-      color: #b06a87;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: bold;
-      margin-bottom: 20px;
+      color: #a95f7d;
+      margin-bottom: 18px;
     }
 
     .service-btn {
       display: inline-block;
-      padding: 11px 22px;
-      border-radius: 30px;
-      background: #b06a87;
+      background: #b96e8b;
       color: white;
-      text-decoration: none;
+      padding: 11px 20px;
+      border-radius: 25px;
       font-size: 14px;
       font-weight: bold;
-      transition: 0.3s ease;
+      transition: 0.3s;
     }
 
     .service-btn:hover {
-      background: #8f4f6b;
+      background: #914e69;
+      transform: translateY(-2px);
     }
 
-    /* EXPERIENCE */
-
     .experience {
-      padding: 100px 8%;
       background: white;
-      text-align: center;
     }
 
     .experience-grid {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -345,35 +295,32 @@
 
     .experience-card {
       padding: 35px 25px;
-      border-radius: 18px;
-      background: #fff7fa;
-      border: 1px solid #f0dce4;
+      text-align: center;
+      background: #fff7f9;
+      border-radius: 20px;
     }
 
     .experience-card span {
-      font-size: 32px;
-      display: block;
-      margin-bottom: 15px;
+      font-size: 35px;
     }
 
     .experience-card h3 {
-      margin-bottom: 12px;
+      font-family: Georgia, serif;
+      color: #62414f;
+      margin: 15px 0 10px;
+      font-size: 23px;
     }
 
     .experience-card p {
-      color: #765d68;
-      font-size: 15px;
+      color: #78636c;
     }
 
-    /* GALLERY */
-
     .gallery {
-      padding: 100px 8%;
-      background: #fff7fa;
+      background: #fff7f9;
     }
 
     .gallery-grid {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -381,26 +328,33 @@
     }
 
     .gallery-item {
-      height: 300px;
-      border-radius: 18px;
+      height: 280px;
       overflow: hidden;
+      border-radius: 18px;
+      position: relative;
     }
 
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: 0.4s ease;
+      transition: 0.5s;
     }
 
     .gallery-item:hover img {
       transform: scale(1.06);
     }
 
-    /* REVIEWS */
+    .gallery-note {
+      text-align: center;
+      max-width: 700px;
+      margin: 25px auto 0;
+      color: #8a7079;
+      font-size: 13px;
+      font-style: italic;
+    }
 
     .reviews {
-      padding: 100px 8%;
       background: white;
     }
 
@@ -414,132 +368,110 @@
 
     .review-card {
       padding: 30px;
-      border-radius: 18px;
-      background: #fff7fa;
-      border: 1px solid #f0dce4;
+      background: #fff7f9;
+      border-radius: 20px;
+      text-align: center;
     }
 
     .stars {
-      color: #b06a87;
-      font-size: 18px;
+      color: #c87999;
+      font-size: 20px;
       margin-bottom: 15px;
     }
 
     .review-card p {
-      color: #765d68;
+      color: #685761;
       font-style: italic;
-      line-height: 1.8;
-      margin-bottom: 18px;
+      margin-bottom: 15px;
     }
 
     .review-card strong {
-      color: #4b2635;
+      color: #694653;
     }
 
-    .demo-note {
+    .review-note {
       text-align: center;
       margin-top: 25px;
-      color: #9b7a87;
+      color: #927d85;
       font-size: 13px;
     }
 
-    /* CONTACT / BOOKING */
-
     .contact {
-      padding: 110px 7%;
       background:
-        linear-gradient(rgba(74, 35, 51, 0.92), rgba(74, 35, 51, 0.92)),
-        url("https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1600&q=85")
-        center/cover no-repeat;
+        linear-gradient(rgba(72, 38, 53, 0.93), rgba(72, 38, 53, 0.93)),
+        url("https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
       color: white;
     }
 
     .contact-container {
-      max-width: 1050px;
+      max-width: 1100px;
       margin: auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 55px;
+      gap: 50px;
       align-items: center;
-    }
-
-    .contact-content {
-      text-align: left;
-    }
-
-    .contact-content .section-label {
-      color: #e8b5c8;
     }
 
     .contact-content h2 {
       color: white;
-      font-size: 44px;
-      margin-bottom: 20px;
     }
 
     .contact-content > p {
-      color: #f5e8ed;
-      line-height: 1.8;
-      margin-bottom: 28px;
+      color: #f4e9ed;
+      margin-bottom: 30px;
     }
 
     .contact-details {
       display: grid;
-      gap: 15px;
+      gap: 18px;
     }
 
     .contact-detail {
       display: flex;
       align-items: center;
-      gap: 14px;
-      padding: 15px 18px;
-      border: 1px solid rgba(255,255,255,0.16);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.06);
+      gap: 15px;
     }
 
     .contact-detail-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.12);
+      width: 48px;
+      height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
-      flex-shrink: 0;
+      background: rgba(255,255,255,0.12);
+      border-radius: 50%;
+      font-size: 21px;
     }
 
     .contact-detail strong {
       display: block;
-      color: white;
-      font-size: 14px;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
 
     .contact-detail span {
-      color: #eadce2;
+      color: #ead9df;
       font-size: 14px;
     }
 
     .booking-card {
       background: white;
-      color: #4b2635;
-      padding: 38px;
-      border-radius: 22px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+      color: #4d3942;
+      padding: 35px;
+      border-radius: 24px;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.18);
     }
 
     .booking-card h3 {
-      font-size: 28px;
+      font-family: Georgia, serif;
+      color: #633f4e;
+      font-size: 29px;
       margin-bottom: 12px;
     }
 
     .booking-card p {
-      color: #765d68;
-      font-size: 15px;
-      line-height: 1.7;
-      margin-bottom: 25px;
+      color: #75626a;
+      margin-bottom: 20px;
     }
 
     .booking-list {
@@ -548,14 +480,13 @@
     }
 
     .booking-list li {
-      margin-bottom: 12px;
-      color: #5d3a48;
-      font-size: 14px;
+      margin-bottom: 10px;
+      color: #67545c;
     }
 
     .booking-list li::before {
       content: "✓";
-      color: #b06a87;
+      color: #b56885;
       font-weight: bold;
       margin-right: 10px;
     }
@@ -563,38 +494,32 @@
     .contact-btn {
       display: block;
       text-align: center;
-      padding: 14px 25px;
-      background: #b06a87;
+      background: #25D366;
       color: white;
+      padding: 15px;
       border-radius: 30px;
-      text-decoration: none;
       font-weight: bold;
-      transition: 0.3s ease;
+      transition: 0.3s;
     }
 
     .contact-btn:hover {
-      background: #8f4f6b;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
     }
 
     .booking-note {
       text-align: center;
-      color: #9b7a87;
       font-size: 12px;
-      margin-top: 15px;
+      color: #99878e;
+      margin-top: 12px;
     }
-
-    /* FOOTER */
 
     footer {
-      background: #351b27;
-      color: #e9d7df;
+      background: #33232b;
+      color: #eadde2;
       text-align: center;
-      padding: 28px 7%;
+      padding: 25px 15px;
       font-size: 13px;
     }
-
-    /* WHATSAPP BUTTON */
 
     .whatsapp {
       position: fixed;
@@ -602,142 +527,69 @@
       bottom: 22px;
       width: 58px;
       height: 58px;
-      border-radius: 50%;
-      background: #25d366;
-      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-decoration: none;
-      font-size: 27px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      font-size: 28px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
       z-index: 999;
+      transition: 0.3s;
     }
 
-    /* TABLET */
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
 
     @media (max-width: 900px) {
-
-      header {
-        padding: 15px 5%;
-        flex-direction: column;
-      }
-
       nav {
         gap: 12px;
       }
 
-      .hero h1 {
-        font-size: 42px;
+      .services-grid,
+      .gallery-grid,
+      .reviews-grid,
+      .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .hero-brand strong {
-        font-size: 34px;
-      }
-
-      .about-container,
       .contact-container {
         grid-template-columns: 1fr;
       }
-
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .experience-grid,
-      .reviews-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .contact-content {
-        text-align: center;
-      }
     }
 
-    /* MOBILE */
-
-    @media (max-width: 600px) {
-
+    @media (max-width: 650px) {
       header {
-        padding: 14px 4%;
-      }
-
-      .brand-main {
-        font-size: 19px;
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 12px;
       }
 
       nav {
-        gap: 9px;
-      }
-
-      nav a {
-        font-size: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
       }
 
       .hero {
-        min-height: 80vh;
-        padding: 60px 6%;
+        min-height: 82vh;
       }
 
-      .hero-brand strong {
-        font-size: 29px;
-        letter-spacing: 2px;
+      section {
+        padding: 70px 5%;
       }
 
-      .hero-brand span {
-        font-size: 10px;
-        letter-spacing: 5px;
-      }
-
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      .hero p {
-        font-size: 15px;
-      }
-
-      .btn {
-        display: block;
-        margin: 15px auto 0;
-        max-width: 230px;
-      }
-
-      .about,
-      .services-section,
-      .experience,
-      .gallery,
-      .reviews,
-      .contact {
-        padding: 70px 6%;
-      }
-
-      .section-heading h2 {
-        font-size: 30px;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-grid {
+      .services-grid,
+      .gallery-grid,
+      .reviews-grid,
+      .experience-grid {
         grid-template-columns: 1fr;
       }
 
       .gallery-item {
         height: 330px;
-      }
-
-      .about-image {
-        min-height: 330px;
-      }
-
-      .contact-content h2 {
-        font-size: 34px;
       }
 
       .booking-card {
@@ -749,585 +601,381 @@
 
 <body>
 
-  <!-- HEADER -->
-
-  <header>
-
-    <a href="#home" class="brand">
-      <span class="brand-main">NAILS BY SHARON</span>
-      <span class="brand-sub">SPA & MORE</span>
-    </a>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </header>
-
-
-  <!-- HERO -->
-
-  <section class="hero" id="home">
-
-    <div class="hero-content">
-
-      <div class="hero-brand">
-        <strong>NAILS BY SHARON</strong>
-        <span>SPA & MORE</span>
-      </div>
-
-      <div class="small-title">
-        Beauty • Nails • Spa
-      </div>
-
-      <h1>Where Beauty Meets Self-Care.</h1>
-
-      <p>
-        Discover beautiful nail care, relaxing spa treatments
-        and a beauty experience created to help you look and feel your best.
-      </p>
-
-      <a href="#services" class="btn btn-primary">
-        Explore Services
-      </a>
-
-      <a href="#contact" class="btn btn-light">
-        Book Appointment
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- ABOUT -->
-
-  <section class="about" id="about">
-
-    <div class="about-container">
-
-      <div class="about-image"></div>
-
-      <div class="about-text">
-
-        <span class="section-label">WELCOME</span>
-
-        <h2>Beauty That Makes You Feel Good</h2>
-
-        <p>
-          Welcome to Nails by Sharon Spa and More, a beauty destination
-          designed around confidence, relaxation and personal care.
-        </p>
-
-        <p>
-          Whether you're preparing for a special occasion or simply
-          taking time for yourself, enjoy a beautiful experience
-          where every detail matters.
-        </p>
-
-        <div class="about-quote">
-          Your beauty. Your moment. Your confidence.
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SERVICES -->
-
-  <section class="services-section" id="services">
-
-    <div class="section-heading">
-
-      <span class="section-label">OUR SERVICES</span>
-
-      <h2>Beauty & Self-Care Services</h2>
-
-      <p>
-        Discover a range of beauty treatments designed to help you
-        relax, refresh and feel confident.
-      </p>
-
-    </div>
-
-
-    <div class="services-grid">
-
-      <div class="service-card">
-
-        <div class="service-icon">💅</div>
-
-        <h3>Manicure</h3>
-
-        <p>
-          Give your hands a fresh, polished look with professional
-          manicure care designed for beautiful results.
-        </p>
-
-        <span class="service-note">
-          Price on request
-        </span>
-
-        <a href="#contact" class="service-btn">
-          Book Service
-        </a>
-
-      </div>
-
-
-      <div class="service-card">
-
-        <div class="service-icon">✨</div>
-
-        <h3>Nail Art</h3>
-
-        <p>
-          Express your personal style with beautiful nail designs,
-          elegant details and creative finishes.
-        </p>
-
-        <span class="service-note">
-          Price on request
-        </span>
-
-        <a href="#contact" class="service-btn">
-          Book Service
-        </a>
-
-      </div>
-
-
-      <div class="service-card">
-
-        <div class="service-icon">🦶</div>
-
-        <h3>Pedicure</h3>
-
-        <p>
-          Enjoy relaxing foot care and a polished finish that leaves
-          you feeling refreshed and confident.
-        </p>
-
-        <span class="service-note">
-          Price on request
-        </span>
-
-        <a href="#contact" class="service-btn">
-          Book Service
-        </a>
-
-      </div>
-
-
-      <div class="service-card">
-
-        <div class="service-icon">🌸</div>
-
-        <h3>Spa Treatments</h3>
-
-        <p>
-          Take a moment for yourself with relaxing treatments created
-          for comfort, beauty and self-care.
-        </p>
-
-        <span class="service-note">
-          Price on request
-        </span>
-
-        <a href="#contact" class="service-btn">
-          Book Service
-        </a>
-
-      </div>
-
-
-      <div class="service-card">
-
-        <div class="service-icon">💖</div>
-
-        <h3>Beauty Care</h3>
-
-        <p>
-          Personal beauty care tailored to help you look polished,
-          feel refreshed and enjoy your experience.
-        </p>
-
-        <span class="service-note">
-          Price on request
-        </span>
-
-        <a href="#contact" class="service-btn">
-          Book Service
-        </a>
-
-      </div>
-
-
-      <div class="service-card">
-
-        <div class="service-icon">👑</div>
-
-        <h3>Special Occasions</h3>
-
-        <p>
-          Get ready for birthdays, celebrations, events and other
-          special moments with beautiful finishing touches.
-        </p>
-
-        <span class="service-note">
-          Price on request
-        </span>
-
-        <a href="#contact" class="service-btn">
-          Book Service
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- EXPERIENCE -->
-
-  <section class="experience">
-
-    <div class="section-heading">
-
-      <span class="section-label">THE EXPERIENCE</span>
-
-      <h2>Made With You in Mind</h2>
-
-      <p>
-        A beauty experience should feel just as good as the results look.
-      </p>
-
-    </div>
-
-
-    <div class="experience-grid">
-
-      <div class="experience-card">
-
-        <span>💎</span>
-
-        <h3>Professional Care</h3>
-
-        <p>
-          Enjoy a beauty experience focused on attention to detail
-          and beautiful finishing touches.
-        </p>
-
-      </div>
-
-
-      <div class="experience-card">
-
-        <span>✨</span>
-
-        <h3>Beautiful Results</h3>
-
-        <p>
-          Feel confident with polished beauty treatments created
-          around your personal style.
-        </p>
-
-      </div>
-
-
-      <div class="experience-card">
-
-        <span>🌷</span>
-
-        <h3>Relax & Enjoy</h3>
-
-        <p>
-          Take a break from your busy day and make time for yourself.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- GALLERY -->
-
-  <section class="gallery" id="gallery">
-
-    <div class="section-heading">
-
-      <span class="section-label">GALLERY</span>
-
-      <h2>A Glimpse of the Experience</h2>
-
-      <p>
-        Sample beauty images are displayed for this demo and can later
-        be replaced with Sharon's real work.
-      </p>
-
-    </div>
-
-
-    <div class="gallery-grid">
-
-      <div class="gallery-item">
-        <img
-          src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85"
-          alt="Beautiful nail design">
-      </div>
-
-      <div class="gallery-item">
-        <img
-          src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85"
-          alt="Professional manicure">
-      </div>
-
-      <div class="gallery-item">
-        <img
-          src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&q=85"
-          alt="Nail art">
-      </div>
-
-      <div class="gallery-item">
-        <img
-          src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=85"
-          alt="Beauty nails">
-      </div>
-
-      <div class="gallery-item">
-        <img
-          src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=85"
-          alt="Nail treatment">
-      </div>
-
-      <div class="gallery-item">
-        <img
-          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85"
-          alt="Beauty spa experience">
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- REVIEWS -->
-
-  <section class="reviews" id="reviews">
-
-    <div class="section-heading">
-
-      <span class="section-label">CLIENT LOVE</span>
-
-      <h2>What Clients Could Say</h2>
-
-      <p>
-        Sample testimonials are shown here for demonstration purposes.
-      </p>
-
-    </div>
-
-
-    <div class="reviews-grid">
-
-      <div class="review-card">
-
-        <div class="stars">★★★★★</div>
-
-        <p>
-          “The experience was beautiful and relaxing.
-          I absolutely loved the attention to detail.”
-        </p>
-
-        <strong>— Demo Client</strong>
-
-      </div>
-
-
-      <div class="review-card">
-
-        <div class="stars">★★★★★</div>
-
-        <p>
-          “My nails looked amazing and the whole experience
-          felt so comfortable and professional.”
-        </p>
-
-        <strong>— Demo Client</strong>
-
-      </div>
-
-
-      <div class="review-card">
-
-        <div class="stars">★★★★★</div>
-
-        <p>
-          “A lovely beauty experience. I would definitely
-          recommend coming back.”
-        </p>
-
-        <strong>— Demo Client</strong>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT / BOOKING -->
-
-  <section class="contact" id="contact">
-
-    <div class="contact-container">
-
-      <div class="contact-content">
-
-        <span class="section-label">
-          BOOK YOUR EXPERIENCE
-        </span>
-
-        <h2>Ready for Some Self-Care?</h2>
-
-        <p>
-          Contact Nails by Sharon Spa and More to schedule
-          your beauty experience. Business details shown here
-          are placeholders for this demo.
-        </p>
-
-
-        <div class="contact-details">
-
-          <div class="contact-detail">
-
-            <div class="contact-detail-icon">
-              📍
-            </div>
-
-            <div>
-              <strong>Location</strong>
-              <span>To be confirmed</span>
-            </div>
-
-          </div>
-
-
-          <div class="contact-detail">
-
-            <div class="contact-detail-icon">
-              📞
-            </div>
-
-            <div>
-              <strong>Phone</strong>
-              <span>To be confirmed</span>
-            </div>
-
-          </div>
-
-
-          <div class="contact-detail">
-
-            <div class="contact-detail-icon">
-              🕒
-            </div>
-
-            <div>
-              <strong>Opening Hours</strong>
-              <span>To be confirmed</span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="booking-card">
-
-        <h3>Book Your Appointment</h3>
-
-        <p>
-          Ready to treat yourself? Once the business WhatsApp
-          number is added, visitors can contact Sharon directly
-          to make an appointment.
-        </p>
-
-
-        <ul class="booking-list">
-
-          <li>Choose your preferred beauty service</li>
-
-          <li>Ask about availability</li>
-
-          <li>Confirm your appointment</li>
-
-          <li>Enjoy your beauty experience</li>
-
-        </ul>
-
-
-        <a
-          href="#"
-          class="contact-btn"
-          onclick="showBookingMessage(); return false;">
-          Book on WhatsApp
-        </a>
-
-
-        <div class="booking-note">
-          Demo button — WhatsApp number will be added later.
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- FOOTER -->
-
-  <footer>
-    © 2026 Nails by Sharon Spa and More.
-    Demo website by IK BASIC DIGITAL SOLUTIONS.
-  </footer>
-
-
-  <!-- FLOATING BUTTON -->
-
-  <a
-    href="#contact"
-    class="whatsapp"
-    aria-label="Contact Nails by Sharon">
-    💬
+<header>
+  <a href="#home" class="brand">
+    <span class="brand-main">NAILS BY SHARON</span>
+    <span class="brand-sub">SPA & MORE</span>
   </a>
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <script>
+<section class="hero" id="home">
+  <div class="hero-content">
 
-    function showBookingMessage() {
+    <div class="hero-brand">
+      <strong>NAILS BY SHARON</strong>
+      <span>SPA & MORE</span>
+    </div>
 
-      alert(
-        "The WhatsApp booking number will be added after the business details are confirmed."
-      );
+    <div class="small-title">Beauty • Nails • Spa</div>
 
-    }
+    <h1>Where Beauty Meets Self-Care.</h1>
 
-  </script>
+    <p>
+      Discover beautiful nail care, relaxing spa treatments and a beauty
+      experience created to help you look and feel your best.
+    </p>
+
+    <a href="#services" class="btn btn-primary">Explore Services</a>
+    <a href="#contact" class="btn btn-light">Book Appointment</a>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-content">
+
+    <span class="section-label">WELCOME</span>
+
+    <h2>Beauty That Makes You Feel Good</h2>
+
+    <p>
+      Welcome to Nails by Sharon Spa and More, a beauty destination
+      designed around confidence, relaxation and personal care.
+    </p>
+
+    <p>
+      Whether you're preparing for a special occasion or simply taking
+      time for yourself, enjoy a beautiful experience where every detail matters.
+    </p>
+
+    <div class="quote">
+      “Your beauty. Your moment. Your confidence.”
+    </div>
+
+  </div>
+</section>
+
+<section class="services" id="services">
+
+  <div class="section-title">
+    <span class="section-label">OUR SERVICES</span>
+    <h2>Beauty & Self-Care Services</h2>
+    <p>
+      Choose the beauty experience that is right for you.
+    </p>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-icon">💅</div>
+      <h3>Manicure</h3>
+      <p>Beautiful nail care designed to leave your hands looking polished and elegant.</p>
+      <span class="price">Price on request</span>
+      <a href="#" class="service-btn"
+         onclick="bookService('Manicure'); return false;">
+        Book Service
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">✨</div>
+      <h3>Nail Art</h3>
+      <p>Creative and stylish nail designs for your personal look or special occasion.</p>
+      <span class="price">Price on request</span>
+      <a href="#" class="service-btn"
+         onclick="bookService('Nail Art'); return false;">
+        Book Service
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🦶</div>
+      <h3>Pedicure</h3>
+      <p>Relaxing foot and nail care to keep your feet feeling fresh and beautiful.</p>
+      <span class="price">Price on request</span>
+      <a href="#" class="service-btn"
+         onclick="bookService('Pedicure'); return false;">
+        Book Service
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌸</div>
+      <h3>Spa Treatments</h3>
+      <p>Take a break, relax and enjoy treatments created for your self-care time.</p>
+      <span class="price">Price on request</span>
+      <a href="#" class="service-btn"
+         onclick="bookService('Spa Treatments'); return false;">
+        Book Service
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💖</div>
+      <h3>Beauty Care</h3>
+      <p>Personal beauty care designed to help you feel confident and refreshed.</p>
+      <span class="price">Price on request</span>
+      <a href="#" class="service-btn"
+         onclick="bookService('Beauty Care'); return false;">
+        Book Service
+      </a>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">👑</div>
+      <h3>Special Occasions</h3>
+      <p>Get your beauty look ready for birthdays, weddings, parties and special moments.</p>
+      <span class="price">Price on request</span>
+      <a href="#" class="service-btn"
+         onclick="bookService('Special Occasions'); return false;">
+        Book Service
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="experience">
+
+  <div class="section-title">
+    <span class="section-label">THE EXPERIENCE</span>
+    <h2>Made With You in Mind</h2>
+    <p>
+      Every visit should feel relaxing, beautiful and personal.
+    </p>
+  </div>
+
+  <div class="experience-grid">
+
+    <div class="experience-card">
+      <span>💎</span>
+      <h3>Professional Care</h3>
+      <p>Beauty services presented with attention to detail and personal care.</p>
+    </div>
+
+    <div class="experience-card">
+      <span>✨</span>
+      <h3>Beautiful Results</h3>
+      <p>Enjoy a polished look designed to complement your personal style.</p>
+    </div>
+
+    <div class="experience-card">
+      <span>🌸</span>
+      <h3>Relax & Enjoy</h3>
+      <p>Take a moment for yourself and enjoy your beauty experience.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+
+  <div class="section-title">
+    <span class="section-label">OUR GALLERY</span>
+    <h2>Beauty in Every Detail</h2>
+    <p>
+      A glimpse of the beauty experience.
+    </p>
+  </div>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85" alt="Nail design">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=900&q=85" alt="Nail care">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&q=85" alt="Manicure">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=900&q=85" alt="Beauty nails">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1610992015762-45dca7c4b1d5?auto=format&fit=crop&w=900&q=85" alt="Spa beauty">
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1599693982339-9b8c7f3e1f1f?auto=format&fit=crop&w=900&q=85" alt="Nail salon">
+    </div>
+
+  </div>
+
+  <p class="gallery-note">
+    Demo beauty images are currently displayed. Sharon's real work can be added here later.
+  </p>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+  <div class="section-title">
+    <span class="section-label">CLIENT LOVE</span>
+    <h2>What Clients Could Say</h2>
+    <p>
+      A professional space where clients can share their experience.
+    </p>
+  </div>
+
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        “Beautiful service and such a relaxing experience. I loved my nails!”
+      </p>
+      <strong>— Demo Client</strong>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        “The attention to detail was amazing. I definitely enjoyed my visit.”
+      </p>
+      <strong>— Demo Client</strong>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        “A lovely beauty experience. I would definitely come back again.”
+      </p>
+      <strong>— Demo Client</strong>
+    </div>
+
+  </div>
+
+  <p class="review-note">
+    Sample testimonials are shown for demonstration purposes.
+  </p>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="contact-container">
+
+    <div class="contact-content">
+
+      <span class="section-label">BOOK YOUR EXPERIENCE</span>
+
+      <h2>Ready for Some Self-Care?</h2>
+
+      <p>
+        Contact Nails by Sharon Spa and More to schedule your beauty experience.
+      </p>
+
+      <div class="contact-details">
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div>
+            <strong>Location</strong>
+            <span>To be confirmed</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <span>+234 814 163 1194</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🕒</div>
+          <div>
+            <strong>Opening Hours</strong>
+            <span>To be confirmed</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="booking-card">
+
+      <h3>Book Your Appointment</h3>
+
+      <p>
+        Ready to treat yourself? Send a WhatsApp message directly to
+        Nails by Sharon Spa and More.
+      </p>
+
+      <ul class="booking-list">
+        <li>Choose your preferred beauty service</li>
+        <li>Ask about availability</li>
+        <li>Confirm your appointment</li>
+        <li>Enjoy your beauty experience</li>
+      </ul>
+
+      <a
+        href="https://wa.me/2348141631194?text=Hello%20Nails%20by%20Sharon%20Spa%20and%20More%20%F0%9F%91%8B%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20let%20me%20know%20the%20available%20dates%20and%20times."
+        target="_blank"
+        class="contact-btn">
+        💬 Book on WhatsApp
+      </a>
+
+      <div class="booking-note">
+        WhatsApp booking is now connected.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Nails by Sharon Spa and More. Demo website by IK BASIC DIGITAL SOLUTIONS.
+</footer>
+
+<a
+  href="https://wa.me/2348141631194?text=Hello%20Nails%20by%20Sharon%20Spa%20and%20More%20%F0%9F%91%8B%0A%0AI%20would%20like%20to%20make%20an%20appointment.%0A%0APlease%20let%20me%20know%20the%20available%20dates%20and%20times."
+  target="_blank"
+  class="whatsapp"
+  aria-label="Contact Nails by Sharon on WhatsApp">
+  💬
+</a>
+
+<script>
+  function bookService(serviceName) {
+
+    const phoneNumber = "2348141631194";
+
+    const message =
+      "Hello Nails by Sharon Spa and More 👋\n\n" +
+      "I would like to book the following service: " +
+      serviceName +
+      ".\n\n" +
+      "Please let me know the available dates and times.";
+
+    const whatsappURL =
+      "https://wa.me/" +
+      phoneNumber +
+      "?text=" +
+      encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+  }
+</script>
 
 </body>
 </html>
