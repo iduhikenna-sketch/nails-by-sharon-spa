@@ -27,20 +27,36 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.96);
+      background: rgba(255,255,255,0.97);
       backdrop-filter: blur(10px);
-      padding: 18px 7%;
+      padding: 16px 7%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       box-shadow: 0 2px 20px rgba(0,0,0,0.07);
     }
 
-    .logo {
+    .brand {
+      text-decoration: none;
+      color: #8f345d;
+      line-height: 1.05;
+    }
+
+    .brand-main {
+      display: block;
       font-family: Georgia, serif;
-      font-size: 23px;
+      font-size: 22px;
       font-weight: bold;
-      color: #a33d68;
+      letter-spacing: 1px;
+    }
+
+    .brand-sub {
+      display: block;
+      font-size: 9px;
+      letter-spacing: 4px;
+      margin-top: 5px;
+      color: #b24775;
+      font-weight: bold;
     }
 
     nav {
@@ -66,13 +82,35 @@
       padding: 80px 7%;
       color: white;
       background:
-        linear-gradient(rgba(55, 25, 42, 0.55), rgba(55, 25, 42, 0.55)),
+        linear-gradient(rgba(55,25,42,0.57), rgba(55,25,42,0.57)),
         url("https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1800&q=85")
         center/cover;
     }
 
     .hero-content {
-      max-width: 680px;
+      max-width: 700px;
+    }
+
+    .hero-brand {
+      display: inline-block;
+      border-left: 3px solid #f0b5ce;
+      padding-left: 15px;
+      margin-bottom: 22px;
+    }
+
+    .hero-brand strong {
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 19px;
+      letter-spacing: 2px;
+    }
+
+    .hero-brand span {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 4px;
+      margin-top: 5px;
+      color: #f5cfdf;
     }
 
     .small-title {
@@ -80,6 +118,7 @@
       letter-spacing: 3px;
       font-size: 13px;
       margin-bottom: 15px;
+      color: #f5dce7;
     }
 
     .hero h1 {
@@ -408,7 +447,11 @@
 <body>
 
 <header>
-  <div class="logo">Nails by Sharon</div>
+
+  <a href="#home" class="brand">
+    <span class="brand-main">NAILS BY SHARON</span>
+    <span class="brand-sub">SPA & MORE</span>
+  </a>
 
   <nav>
     <a href="#home">Home</a>
@@ -418,10 +461,18 @@
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </nav>
+
 </header>
 
 <section class="hero" id="home">
+
   <div class="hero-content">
+
+    <div class="hero-brand">
+      <strong>NAILS BY SHARON</strong>
+      <span>SPA & MORE</span>
+    </div>
+
     <div class="small-title">Beauty • Nails • Spa</div>
 
     <h1>Where Beauty Meets Self-Care.</h1>
@@ -431,9 +482,16 @@
       beauty experience created to help you look and feel your best.
     </p>
 
-    <a href="#services" class="btn btn-primary">Explore Services</a>
-    <a href="#contact" class="btn btn-light">Book Appointment</a>
+    <a href="#services" class="btn btn-primary">
+      Explore Services
+    </a>
+
+    <a href="#contact" class="btn btn-light">
+      Book Appointment
+    </a>
+
   </div>
+
 </section>
 
 <section id="about">
@@ -448,6 +506,7 @@
     </div>
 
     <div class="about-text">
+
       <h2>Beauty That Makes You Feel Good</h2>
 
       <p>
@@ -461,7 +520,10 @@
         every detail matters.
       </p>
 
-      <p class="signature">Your beauty. Your moment. Your confidence.</p>
+      <p class="signature">
+        Your beauty. Your moment. Your confidence.
+      </p>
+
     </div>
 
   </div>
@@ -472,7 +534,9 @@
 
   <div class="section-heading">
     <span>What We Offer</span>
+
     <h2>Our Beauty Services</h2>
+
     <p>
       A selection of beauty and self-care services presented for this demo.
     </p>
@@ -483,37 +547,49 @@
     <div class="service-card">
       <div class="icon">💅</div>
       <h3>Manicure</h3>
-      <p>Beautiful and carefully finished nail care for everyday elegance.</p>
+      <p>
+        Beautiful and carefully finished nail care for everyday elegance.
+      </p>
     </div>
 
     <div class="service-card">
       <div class="icon">✨</div>
       <h3>Nail Art</h3>
-      <p>Creative nail designs for your personality, style and special moments.</p>
+      <p>
+        Creative nail designs for your personality, style and special moments.
+      </p>
     </div>
 
     <div class="service-card">
       <div class="icon">🦶</div>
       <h3>Pedicure</h3>
-      <p>Relaxing foot and nail care designed to leave you feeling refreshed.</p>
+      <p>
+        Relaxing foot and nail care designed to leave you feeling refreshed.
+      </p>
     </div>
 
     <div class="service-card">
       <div class="icon">🧖‍♀️</div>
       <h3>Spa Treatments</h3>
-      <p>Relax and enjoy a calming beauty and wellness experience.</p>
+      <p>
+        Relax and enjoy a calming beauty and wellness experience.
+      </p>
     </div>
 
     <div class="service-card">
       <div class="icon">💆‍♀️</div>
       <h3>Beauty Care</h3>
-      <p>Personal beauty treatments created to help you feel confident.</p>
+      <p>
+        Personal beauty treatments created to help you feel confident.
+      </p>
     </div>
 
     <div class="service-card">
       <div class="icon">👰</div>
       <h3>Special Occasions</h3>
-      <p>Get beautifully prepared for birthdays, weddings and special events.</p>
+      <p>
+        Get beautifully prepared for birthdays, weddings and special events.
+      </p>
     </div>
 
   </div>
@@ -523,11 +599,15 @@
 <section class="experience">
 
   <div class="section-heading">
+
     <span>The Experience</span>
+
     <h2>Made With You in Mind</h2>
+
     <p>
       A modern beauty experience focused on care, comfort and beautiful results.
     </p>
+
   </div>
 
   <div class="experience-grid">
@@ -554,11 +634,15 @@
 <section class="gallery" id="gallery">
 
   <div class="section-heading">
+
     <span>Our Gallery</span>
+
     <h2>Beauty In Every Detail</h2>
+
     <p>
       Sample images for this demo. Your own work can replace these images.
     </p>
+
   </div>
 
   <div class="gallery-grid">
@@ -585,37 +669,53 @@
 <section class="testimonials" id="reviews">
 
   <div class="section-heading">
+
     <span>Client Love</span>
+
     <h2>What Clients Could Say</h2>
+
     <p>
       Sample testimonials shown for demonstration purposes.
     </p>
+
   </div>
 
   <div class="testimonial-grid">
 
     <div class="testimonial">
+
       <div class="stars">★★★★★</div>
+
       <p>
         “I loved the attention to detail. Everything felt beautiful and relaxing.”
       </p>
+
       <strong>— Demo Client</strong>
+
     </div>
 
     <div class="testimonial">
+
       <div class="stars">★★★★★</div>
+
       <p>
         “The perfect place to treat yourself and leave feeling confident.”
       </p>
+
       <strong>— Demo Client</strong>
+
     </div>
 
     <div class="testimonial">
+
       <div class="stars">★★★★★</div>
+
       <p>
         “Beautiful service and such a lovely beauty experience.”
       </p>
+
       <strong>— Demo Client</strong>
+
     </div>
 
   </div>
@@ -625,17 +725,25 @@
 <section class="contact" id="contact">
 
   <div class="section-heading">
+
     <span>Book Your Visit</span>
+
     <h2>Ready for Some Self-Care?</h2>
+
     <p>
       Contact Nails by Sharon Spa and More to schedule your beauty experience.
     </p>
+
   </div>
 
   <div class="contact-details">
+
     <p>📍 Location: To be confirmed</p>
+
     <p>📞 Phone: To be confirmed</p>
+
     <p>🕒 Opening Hours: To be confirmed</p>
+
   </div>
 
   <a
@@ -649,13 +757,21 @@
 </section>
 
 <footer>
+
   <p>
     © 2026 Nails by Sharon Spa and More.
     Demo website by IK BASIC DIGITAL SOLUTIONS.
   </p>
+
 </footer>
 
-<a href="#contact" class="whatsapp" aria-label="WhatsApp booking">💬</a>
+<a
+  href="#contact"
+  class="whatsapp"
+  aria-label="WhatsApp booking"
+>
+  💬
+</a>
 
 </body>
 </html>
